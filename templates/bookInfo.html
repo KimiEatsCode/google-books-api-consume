@@ -1,0 +1,82 @@
+<div ng-repeat="book in results track by $index">
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <section class="bookimage">
+
+                <md-toolbar class="">
+                    <div class="md-toolbar-tools title">
+                        <h2 class="md-flex">{{book.title}}</h2>
+
+                        <!--nested ng-repeat to get to array data in object because author is an object in an object-->
+                    </div>
+                    <md-toolbar class="">
+                        <div class="md-toolbar-tools author">
+
+                            <p>
+                                <span ng-repeat="people in book.author">by
+                                    {{people}}</span>
+                            </p>
+
+                            <!--nested ng-repeat to get to array data in object because author is an object in an object-->
+                        </div>
+                    </md-toolbar>
+
+                    <img class="bookcover" src ng-src="{{book.image}}">
+                </section>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6">
+                <section class="bookinfo">
+                    <md-content>
+                        <ul>
+                            <li class="panel" ng-click="showDescription=!showDescription">Description
+                                <i ng-hide="showDescription" class="fa fa-plus fa-lg" aria-hidden="true"></i>
+                                <i ng-show="showDescription" class="fa fa-minus fa-lg" aria-hidden="true"></i>
+                            </li>
+                            <li ng-show="showDescription">{{book.description | limitTo: wordLimit = 300}}
+                            </li>
+
+                            <li class="panel" ng-click="showPublish=!showPublish">Book Details
+                                <i ng-hide="showPublish" class="fa fa-plus fa-lg" aria-hidden="true"></i>
+                                <i ng-show="showPublish" class="fa fa-minus fa-lg" aria-hidden="true"></i>
+                            </li>
+
+                            <li ng-show="showPublish">
+
+                                <p>
+                                    <label>Page Count:</label>
+                                    {{book.pageCount}}</p>
+                                <p>
+                                    <label>Publisher:</label>
+                                    {{book.publisher}}</p>
+
+                                <p>
+                                    <label>Author:</label><span ng-repeat="people in book.author"> 
+                                        {{people}}</span>
+                                  </p>
+                                <p>
+                                    <label>Published Date:</label>
+                                    {{book.published}}</p>
+                            </li>
+
+                            <li class="panel">
+                                <a ng-href="{{book.sample}}">
+                                    <label>Sample and Buy!
+                                    </label>
+                                    {{book.title}}</a>
+                            </li>
+                            <li>
+                                <p>
+                                    <label>Price:</label>
+                                    {{book.price===0 ? 'View Sample for buy options' :"$" + book.price}}</p>
+                            </li>
+                        </ul>
+
+                    </md-content>
+                </section>
+                <!--end section bookinfo-->
+
+            </div>
+        </div>
+        <!--row-->

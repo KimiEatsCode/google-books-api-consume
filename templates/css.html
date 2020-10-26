@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <top-menu-custom-directive></top-menu-custom-directive>
+    </div>
+</div>
+
+<div class="row content">
+
+
+
+  <div class="row">
+
+          <img class="lang-logo-single" ng-src="{{langlogoCSS}}">
+
+      <div class="col-md-2 col-md-offset-5">
+        <div class="col-xs-6 col-md-6">
+      <button class="btn view-old" ng-style="showingOld"  ng-click="sortOldest()">View Oldest</button>
+    </div>
+  <div class="col-xs-6 col-md-3">
+        <button class="btn view-new" ng-style="showingNew" ng-click="sortNewest()">View Newest</button>
+  </div>
+      </div>
+
+      </div>
+
+
+    <book-info-custom-directive></book-info-custom-directive>
+
+    <div class="button-wrapper">
+        <button class="btn more-button" ng-show="serverResponse" ng-click="add20()">View next 10</button>
+        <button ng-class="endResults" class="btn more-button">{{endOfResults}}</button>
+    </div>
+</div>
+<!--main-->

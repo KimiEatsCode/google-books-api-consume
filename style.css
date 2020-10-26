@@ -1,0 +1,383 @@
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #ffeb3b;
+  font-family: pokemon;
+  letter-spacing: 5px;
+}
+
+h5 {
+  font-weight:bold;
+}
+
+.endResults {
+  background-color:#ccc!important;
+  display:block;
+}
+.homeLogos {
+    padding: 40px;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background: #f5f5f5;
+    color: #444;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+}
+#back-to-top:hover {
+    background: #e9ebec;
+}
+#back-to-top.show {
+    opacity: 1;
+}
+#content {
+    height: 2000px;
+}
+.hide {
+display:none;
+}
+
+.show {
+  display:block;
+}
+
+.view-old {
+  float:right;
+}
+
+.view-new {
+  float:left;
+}
+
+.inactiveColor {
+  background-color:#ccc;
+}
+
+img {
+    vertical-align: middle;
+    width: 310px;
+    height:270px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+
+.btn {
+  font-weight: bold;
+  background-color:#FFE57F;
+    display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top:20px;
+  margin-bottom:20px;
+
+}
+
+.button-wrapper {
+  text-align:center;
+}
+
+.more-button {
+  width:200px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+    padding: 0 25px;
+}
+
+
+.row {
+  background-color:#fff;
+  margin:0;
+}
+
+.lang-logo {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+img.lang-logo-single {
+    width: 21%;
+    height: auto;
+    margin-top: 20px;
+}
+
+section {
+  min-height:200px;
+}
+
+.top-menu div {
+    display: inline-block;
+    padding: 1px 0px 0px 0px;
+}
+
+
+
+.top-menu img {
+  max-width:100px;
+  max-height:100px;
+}
+
+.top-menu-wrapper {
+  overflow: hidden;
+
+  background-color: #808080;
+  height: 135px;
+}
+
+#list-container {
+overflow:hidden;
+overflow-x: scroll;
+width:300px;
+float:left;
+}
+
+.list{
+    background:grey;
+    width:910px;
+    float:left;
+}
+
+
+#arrowR {
+    background: #f8dc3d;
+    width: 90px;
+    height: 134px;
+    float: right  ;
+    cursor: pointer;
+    font-size: 40px;
+    padding-top: 43px;
+    padding-left: 19px;
+}
+
+
+#arrowL {
+    background: #f8dc3d;
+    width: 90px;
+    height: 134px;
+    float: left;
+    cursor: pointer;
+    font-size: 40px;
+    padding-top: 43px;
+    padding-left: 19px;
+}
+/*top menu slider start*/
+
+.item {
+    float: left;
+    position: relative;
+    background-color:#f8dc3d;
+    height:111px;
+}
+
+#item-js {
+  width: 200px;
+  height: 114px;
+  background-position-y: -47px;
+  float: left;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 140px 140px;
+  background-position-x: 30px;
+    background-image: url('images/js-logo.jpg');
+
+}
+#item-php {
+  width: 200px;
+  height: 114px;
+  background-position-y: -47px;
+  float: left;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 140px 140px;
+  background-position-x: 30px;
+    background-image: url('images/php-logo.jpg');
+
+}
+#item-python {
+  width: 200px;
+  height: 114px;
+  background-position-y: -47px;
+  float: left;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 140px 140px;
+  background-position-x: 30px;
+    background-image: url('images/python-logo.jpg');
+}
+
+#item-css{
+  width: 200px;
+  height: 114px;
+  background-position-y: -47px;
+  float: left;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 140px 140px;
+  background-position-x: 30px;
+    background-image: url("images/css-logo.jpg");
+}
+/*end top menu slider*/
+
+.container-fluid {
+padding:0;
+}
+
+.btn-default {
+    font-size: 2em;
+    background-color:#f8dc3d ;
+}
+
+.btn-default:hover {
+    font-size: 2em;
+    background-color:#f8dc3d ;
+}
+
+.top-menu a {
+    display: inline-block;
+    margin: 8px;
+}
+
+.top-menu {
+  margin: 24px auto;
+  display: block;
+  background-color: #808080;
+  height: 136px;
+}
+
+.top-menu a {
+   text-decoration: none;
+}
+
+section.bookimage {
+  text-align:center;
+  margin:10px;
+  min-height: 200px;
+}
+
+section.bookimage {
+  text-align:center;
+  margin:10px;
+    min-height: 200px;
+}
+
+section.bookimage md-toolbar._md-toolbar-transitions {
+  background:none!important;
+}
+
+section.bookinfo {
+  height: 217px;
+  word-break: break-word;
+  height: auto;
+  min-height: 240px;
+  margin: 10px;
+}
+
+.bootkinfo.label {
+  font-weight:bold;
+}
+
+
+li.panel {
+    background-color:#64FFDA;
+    margin: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.panel i.fa.fa-plus, i.fa.fa-minus {
+    float: right;
+    padding: 5px;
+}
+
+.bookcover {
+    max-width: 150px;
+    height: 225px;
+    padding: 25px 0px 0px;
+}
+
+/*Angular Material Design style overrides*/
+
+html.md-default-theme, html, body.md-default-theme {
+  background-color:#fff;
+}
+
+.md-toolbar-tools {
+    background: #4A148C;
+    color: #fff;
+    border-radius: 4px;
+    height:auto;
+}
+
+.title {
+  padding:10px;
+
+}
+
+.md-toolbar-tools.author {
+    display: block;
+    background-color: rgba(74, 20, 140, 0.54);
+    padding-top: 10px;
+    font-size:0.8em;
+    height:auto;
+}
+
+@media (max-width: 978px) {
+    .container {
+      padding:0;
+      margin:0;
+    }
+
+    body {
+      padding:0;
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom:0;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+img.lang-logo-single {
+    width: 76%;
+    height: auto;
+    margin-top: 20px;
+}
+
+#arrowR, #arrowL{
+  display:none!important;
+}
+
+.top-menu {
+  width:100%!important;
+}
+
+.col-xs-12.col-md-12.top-menu-col {
+    padding: 0;
+}
+}
